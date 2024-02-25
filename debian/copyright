@@ -1,0 +1,266 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: bisect-ppx
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     .github/FUNDING.yml
+           .github/workflows/test.yml
+           .gitignore
+           Makefile
+           README.md
+           binaries.esy.json
+           bsconfig.json
+           doc/CHANGES
+           doc/advanced.md
+           doc/convert-readme.js
+           doc/sample.gif
+           dune-project
+           package.json
+           src/common/bisect_common.ml
+           src/common/bisect_common.mli
+           src/common/dune
+           src/npm-install.sh
+           src/ppx/dune
+           src/ppx/exclude.ml
+           src/ppx/exclude.mli
+           src/ppx/exclude_lexer.mll
+           src/ppx/exclude_parser.mly
+           src/ppx/exclusions.ml
+           src/ppx/exclusions.mli
+           src/ppx/instrument.ml
+           src/ppx/instrument.mli
+           src/ppx/js/dune
+           src/ppx/js/ppx.ml
+           src/ppx/register.ml
+           src/report/cobertura.ml
+           src/report/cobertura.mli
+           src/report/coverage.css
+           src/report/coverage.js
+           src/report/coveralls.ml
+           src/report/coveralls.mli
+           src/report/dummy-binary
+           src/report/dune
+           src/report/html.ml
+           src/report/html.mli
+           src/report/input.ml
+           src/report/input.mli
+           src/report/main.ml
+           src/report/merge.ml
+           src/report/merge.mli
+           src/report/text.ml
+           src/report/text.mli
+           src/report/util.ml
+           src/report/util.mli
+           src/runtime/js/jest.ml
+           src/runtime/js/runtime.ml
+           src/runtime/js/runtime.mli
+           src/runtime/native/dune
+           src/runtime/native/runtime.ml
+           src/runtime/native/runtime.mli
+           src/vendor/highlight.js/CHANGES.md
+           src/vendor/highlight.js/README.ru.md
+           src/vendor/highlight.js/highlight.pack.js
+           test/.gitattributes
+           test/ci/binaries.sh
+           test/ci/travis-wrapped-esy.sh
+           test/dune
+           test/instrument/apply/and.t
+           test/instrument/apply/apply.t
+           test/instrument/apply/assert.t
+           test/instrument/apply/dune
+           test/instrument/apply/operator.t
+           test/instrument/apply/or.t
+           test/instrument/apply/pipe.t
+           test/instrument/apply/special.t
+           test/instrument/attribute.t
+           test/instrument/class/class.t
+           test/instrument/class/dune
+           test/instrument/class/instvar.t
+           test/instrument/class/method.t
+           test/instrument/class/new.t
+           test/instrument/class/send.t
+           test/instrument/control/dune
+           test/instrument/control/for.t
+           test/instrument/control/fun.t
+           test/instrument/control/function.t
+           test/instrument/control/if.t
+           test/instrument/control/lazy.t
+           test/instrument/control/match.t
+           test/instrument/control/newtype.t
+           test/instrument/control/try.t
+           test/instrument/control/while.t
+           test/instrument/dune
+           test/instrument/mangle.t
+           test/instrument/mli.t
+           test/instrument/pattern/binding.t
+           test/instrument/pattern/dune
+           test/instrument/pattern/exception.t
+           test/instrument/pattern/nary.t
+           test/instrument/pattern/nullary.t
+           test/instrument/pattern/row.t
+           test/instrument/pattern/unary.t
+           test/instrument/pattern/when.t
+           test/instrument/recent/dune
+           test/instrument/recent/error.t
+           test/instrument/recent/exception-pattern.t
+           test/instrument/recent/exclusions.t
+           test/instrument/recent/gadt.t
+           test/instrument/recent/let-exception.t
+           test/instrument/recent/letop.t
+           test/instrument/recent/opaque_identity.t
+           test/instrument/recent/pattern-open.t
+           test/instrument/recent/react.t
+           test/instrument/recent/refutation.t
+           test/instrument/shadow.t
+           test/instrument/structure.t
+           test/instrument/test.sh
+           test/instrument/value.t
+           test/js/Makefile
+           test/js/bsconfig.json
+           test/js/expected
+           test/js/hello.re
+           test/js/hello.rei
+           test/js/package.json
+           test/random.t
+           test/report/cobertura.t
+           test/report/directory.t
+           test/report/dune
+           test/report/empty.ml
+           test/report/html-tree/baz/baz.ml
+           test/report/html-tree/dune
+           test/report/html-tree/foo/bar/bar_a.ml
+           test/report/html-tree/foo/bar/bar_b.ml
+           test/report/html-tree/foo/foo.ml
+           test/report/html-tree/html-tree.t
+           test/report/html-tree/test_tree.ml
+           test/report/html.t
+           test/report/line.t
+           test/report/merge.ml
+           test/report/merge.t
+           test/report/missing.t
+           test/report/send-to.t
+           test/report/test.ml
+           test/report/test_merge1.ml
+           test/report/test_merge2.ml
+           test/report/text.t
+           test/report/truncate.t
+           test/self/bisect_ppx.diff
+           test/self/meta_bisect_ppx.diff
+           test/sigterm/at_exit_hook.ml
+           test/sigterm/at_exit_main.ml
+           test/sigterm/daemon.ml
+           test/sigterm/dune
+           test/sigterm/sigterm.t
+           test/sigterm/sigterm_atexit.t
+           test/usage/dune-conditional/Makefile
+           test/usage/dune-conditional/dune
+           test/usage/dune-conditional/dune-project
+           test/usage/dune-conditional/dune-workspace
+           test/usage/dune-conditional/source.ml
+           test/usage/dune-integration/Makefile
+           test/usage/dune-integration/dune
+           test/usage/dune-integration/dune-project
+           test/usage/dune-integration/dune-workspace
+           test/usage/dune-integration/source.ml
+           test/usage/dune-linkall/Makefile
+           test/usage/dune-linkall/dune
+           test/usage/dune-linkall/dune-project
+           test/usage/dune-linkall/dune-workspace
+           test/usage/dune-linkall/source.ml
+           test/usage/dune-unconditional/Makefile
+           test/usage/dune-unconditional/dune
+           test/usage/dune-unconditional/dune-project
+           test/usage/dune-unconditional/dune-workspace
+           test/usage/dune-unconditional/source.ml
+           test/usage/js_of_ocaml/Makefile
+           test/usage/js_of_ocaml/dune
+           test/usage/js_of_ocaml/dune-project
+           test/usage/js_of_ocaml/dune-workspace
+           test/usage/js_of_ocaml/source.ml
+           test/usage/js_of_ocaml_with_runtime_library/Makefile
+           test/usage/js_of_ocaml_with_runtime_library/dune
+           test/usage/js_of_ocaml_with_runtime_library/dune-project
+           test/usage/js_of_ocaml_with_runtime_library/dune-workspace
+           test/usage/js_of_ocaml_with_runtime_library/source.ml
+           test/usage/ocamlfind/Makefile
+           test/usage/ocamlfind/source.ml
+           test/usage/reason/Makefile
+           test/usage/reason/dune
+           test/usage/reason/dune-project
+           test/usage/reason/dune-workspace
+           test/usage/reason/source.re
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     LICENSE.md
+Copyright: 2008-2021 Xavier Clerc, Leonid Rozenberg, Anton Bachin
+License:   Expat
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the “Software”), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+Files:     src/vendor/highlight.js/README.md
+Copyright: __NO_COPYRIGHT__ in: src/vendor/highlight.js/README.md
+License:   __UNKNOWN__
+ [1]: http://highlightjs.readthedocs.io/en/latest/api.html#inithighlightingonload
+ [2]: http://highlightjs.readthedocs.io/en/latest/css-classes-reference.html
+ [3]: http://highlightjs.readthedocs.io/en/latest/api.html#highlightblock-block
+ [4]: http://highlightjs.readthedocs.io/en/latest/api.html#configure-options
+ [5]: https://highlightjs.org/download/
+ [6]: http://highlightjs.readthedocs.io/en/latest/building-testing.html
+ [7]: https://github.com/highlightjs/highlight.js/blob/master/LICENSE
+ [8]: https://github.com/highlightjs/highlight.js/blob/master/AUTHORS.en.txt
+
+Files:     bisect_ppx.opam
+Copyright: __NO_COPYRIGHT__ in: bisect_ppx.opam
+License:   __UNKNOWN__
+ depends: [
+ "base-unix"
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         .github/issue_template.md
+#         doc/footer.html
+#         doc/header.html
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.
+
+#----------------------------------------------------------------------------
+# License file: LICENSE.md
+ Copyright © 2008-2021 Xavier Clerc, Leonid Rozenberg, Anton Bachin
+ .
+ Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the “Software”), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.

@@ -1,0 +1,2 @@
+#debian/tmp/usr/lib/ocaml/ usr/lib
+debian/tmp/usr/lib/ocaml/*	@OCamlStdlibDir@
